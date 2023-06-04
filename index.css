@@ -1,0 +1,63 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: auto;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/** Texto seleccion **/
+.textoSeleccion-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  height: auto;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+
+}
+.textoSeleccion-container p{
+  color: white;
+  font-size: 20px;
+}
+  .with-bg-color::selection {
+    background-color: deeppink;
+  }
+  
+  .with-text-color::selection {
+    color: deeppink;
+  }
+  
+  .with-bg-and-text-color::selection {
+    color: black;
+    background-color: #fac642;
+  }
+  
+  .with-text-shadow::selection {
+    text-shadow: 1px 1px 3px deeppink;
+  }
+
+/** Fondo de imagen **/
+body .imgInText-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  height: auto;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+.imgInText-container_text{
+  background: url("imgs/pngegg.png");
+  background-clip: unset;
+  -webkit-background-clip: text;
+}
